@@ -5,15 +5,12 @@ import { slideInFromRight } from '../utils/slideIn';
 import { TiThMenu } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
 import { menuOpen, menuClose } from '../utils/navbarMenu';
+import useIsMobile from '../hooks/useIsMobile';
 
 function Navbar() {
-  const [status, setStatus] = useState(false);
-
-  const handleMenu = () => {
-    if (status) {
-      
-    }
-  }
+  const isMobile = useIsMobile();
+  const [status, setStatus] = useState(!isMobile);
+  console.log(status);
 
   return (
     <motion.div
@@ -22,7 +19,7 @@ function Navbar() {
   variants={slideInFromRight(0.5)}
   className='fixed top-0 right-0 z-50 px-4 py-2'
   >
-    <nav className='w-full'>
+    <nav className='w-full p-2'>
       {status && (
         <motion.ul
         className='flex flex-row w-full h-10 items-center text-[12px] text-black border-white border-2 rounded-full bg-white'
