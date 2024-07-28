@@ -9,7 +9,7 @@ import '../styles/applyGradient.scss';
 
 function Home() {
   return (
-    <section id='home' className='min-h-screen h-full w-full flex items-center justify-center'>
+    <section id='home' className='min-h-screen h-full w-full flex items-center justify-center cursor_section_home trail_home'>
       <div className="min-h-screen relative flex flex-col w-full h-full justify-center">
         <BackgroundVideo videoSrc={HomeVideo} videotype='video/webm'/>
 
