@@ -15,17 +15,17 @@
     z-index: 9999; /* Ensure it appears on top */
 }
 
-.trail {
-    position: absolute;
-    width: 30px;
-    height: 20px;
-    background: radial-gradient(circle, rgba(48, 48, 48, 0.8) 0%, rgba(117, 117, 117, 0) 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    animation: trail-animation 1s linear infinite;
-    z-index: 9999; /* Ensure it's on top */
-}
+// .trail {
+//     position: absolute;
+//     width: 30px;
+//     height: 20px;
+//     background: radial-gradient(circle, rgba(48, 48, 48, 0.8) 0%, rgba(117, 117, 117, 0) 70%);
+//     border-radius: 50%;
+//     pointer-events: none;
+//     transform: translate(-50%, -50%);
+//     animation: trail-animation 1s linear infinite;
+//     z-index: 9999; /* Ensure it's on top */
+// }
 
 @keyframes trail-animation {
     0% {
@@ -45,5 +45,5 @@
 }
 
 .cursor_section_about {
-    cursor: url('../assets/cursors/dna.png'), auto;
+    cursor: url('../assets/cursors/rocket.png'), auto;
 }

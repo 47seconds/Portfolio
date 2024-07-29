@@ -15,14 +15,14 @@ function Navbar() {
   useEffect(() => {
     setTimeout(() => {
       if (status) setStatus(!status)
-    }, 5300); // when header collapse
+    }, 5800); // when header collapse
   }, [])
 
   return (
     <motion.div
   initial='hidden'
   animate='visible'
-  variants={slideInFromRight(2)} // Header show
+  variants={slideInFromRight(2.5)} // Header show
   className='fixed top-0 right-0 z-50 px-4 py-2'
   >
     <nav className='w-full p-2'>

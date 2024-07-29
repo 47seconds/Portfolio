@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, Home, About, Skills, Projects, Experience, Contact} from './pages';
+import {Navbar, Home, About, Skills, Projects, Contact} from './pages';
 import CursorTrail from './components/cursorTrail';
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
-      <Experience/>
       <Contact/>
     </div>
   )

@@ -9,6 +9,11 @@ export const EXPERIENCES = [
     },
 ]
 
+export const ME = {
+    name: 'Vaibhav Lakshkar',
+    work: 'Full Stack Developer',
+}
+
 export const PROJECTS = [
     {
         title: "Gacha",
@@ -34,4 +39,69 @@ export const CONTACTS = {
     phone: "+91-62653-38665",
 }
 
-export const SKILLS = ["JavaScript", "HTML", "CSS", "SASS/SCSS", "Tailwind", "React.js", "Express.js", "Node.js", "MongoDB", "Cloudinary", "Redux", "Git", "C", "C++", "Python", "Bash"]
+export const SKILLS = [
+    {
+        name: "JavaScript",
+        image: ""
+    },
+    {
+        name: "HTML",
+        image: ""
+    },
+    {
+        name: "CSS",
+        image: ""
+    },
+    {
+        name: "SASS/SCSS",
+        image: ""
+    },
+    {
+        name: "Tailwind",
+        image: ""
+    },
+    {
+        name: "React.js",
+        image: ""
+    },
+    {
+        name: "Express.js",
+        image: ""
+    },
+    {
+        name: "Node.js",
+        image: ""
+    },
+    {
+        name: "MongoDB",
+        image: ""
+    },
+    {
+        name: "Cloudinary",
+        image: ""
+    },
+    {
+        name: "Redux",
+        image: ""
+    },
+    {
+        name: "Git",
+        image: ""
+    },
+    {
+        name: "C",
+        image: ""
+    },
+    {
+        name: "C++",
+        image: ""
+    },
+    {
+        name: "Python",
+        image: ""
+    },
+    {
+        name: "Bash",
+        image: ""
+    },
+]
