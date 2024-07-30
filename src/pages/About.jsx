@@ -40,7 +40,7 @@ function About() {
         // page only animate when in view
         {isVisible && (<>
             <motion.div
-              className="z-20 p-4 w-full flex justify-center h-full items-center"
+              className="z-20 p-4 text-center w-full flex justify-center h-full pb-10 items-center"
               initial="hidden"
               animate="visible"
               variants={slideInFromTop}
@@ -54,27 +54,34 @@ function About() {
               </span>
             </motion.div>
 
-            <motion.div
-            className='z-20 ml-4 mt-5 w-full flex'
-            initial="hidden"
-            animate="visible"
-            variants={slideInFromLeft(1)}
-            >
-              <div className={`text-6xl text-gray-300 font-bold pl-4 ${(isMobile) ? `w-3/4` : `w-1/2`} `}>
-              {ME.name}
-              </div>
-            </motion.div>
+            <div className={`z-20 flex flex-grow items-center justify-between w-full ${isMobile ? `flex-col` : ``}`}>
+              <div className={`flex flex-col ${(isMobile) ? `w-3/4` : `w-1/2`}`}>
+                <motion.div
+                className='z-20 ml-4 mt-5 w-full flex'
+                initial="hidden"
+                animate="visible"
+                variants={slideInFromLeft(1)}
+                >
+                  <div className={`text-6xl text-gray-200 font-bold pl-4`}>
+                  {ME.name}
+                  </div>
+                </motion.div>
 
-            <motion.div
-            className='z-20 ml-4 mt-5 w-full flex'
-            initial="hidden"
-            animate="visible"
-            variants={slideInFromLeft(1)}
-            >
-              <div className={`apply-gradient pl-4 ${(isMobile) ? `w-3/4` : `w-1/2`} `}>
-              <i>~ {MY_SUMMARY}</i>
+                <motion.div
+                className='z-20 ml-4 mt-5 w-full flex'
+                initial="hidden"
+                animate="visible"
+                variants={slideInFromLeft(1.5)}
+                >
+                  <div className={`text-gray-300 pl-4 py-10 ${(isMobile) ? `` : `w-3/4`}`}>
+                    <i>~ {MY_SUMMARY}</i>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
+              <div className='text-white pr-10'>
+                <img src='' alt='vaibhav-lakshkar'/>
+              </div>
+            </div>
           </>
         )}
       </div>
